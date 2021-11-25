@@ -1,4 +1,5 @@
 @charset "utf-8";
+
 /*----------------------------------
 topページのスタイル
 -----------------------------------*/
@@ -34,9 +35,6 @@ works
 }
 
 @media screen and (max-width: 750px) {
-  .works {
-    margin-bottom: 93px;
-  }
   .works .works_list {
     flex-direction: column;
   }
@@ -70,9 +68,6 @@ news
 }
 
 @media screen and (max-width: 750px) {
-  .news {
-    margin-bottom: 70px;
-  }
   .news dl {
     flex-direction: column;
   }
