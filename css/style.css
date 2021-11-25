@@ -1,0 +1,141 @@
+@charset "utf-8";
+
+/*-------------------------------
+各ページのスタイル
+--------------------------------*/
+
+/*=============================
+aboutページのスタイル
+==============================*/
+.about {
+  margin-bottom: 235px;
+}
+.about address {
+  font-style: normal;
+}
+.about p, address {
+  margin-bottom: 30px;
+}
+.about p:last-child {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 750px) {
+  .about {
+    margin-top: 40px;
+  }
+}
+
+/*=============================
+worksページのスタイル
+==============================*/
+.works {
+  margin-bottom: 215px;
+}
+.works .photo_list {
+  max-width: 640px;
+  margin: 0 auto;
+}
+.works .photo_list li {
+  margin-bottom: 140px;
+}
+.works .photo_list li .works_img {
+  margin-bottom: 30px;
+}
+.works .photo_list li .works_img img {
+  width: 100%;
+}
+.works_text h3 {
+  margin-bottom: 10px;
+}
+
+/*=============================
+newsページのスタイル
+==============================*/
+.news {
+  margin-bottom: 255px;
+}
+.news dl {
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 1px solid #C8C8C8;
+}
+
+.news dt {
+  width: calc(130/840*100%);
+  border-bottom: 1px solid #C8C8C8;
+  padding: 15px;
+}
+.news dd {
+  width: calc(710/840*100%);
+  border-bottom: 1px solid #C8C8C8;
+  padding: 15px;
+}
+
+@media screen and (max-width: 750px) {
+  .news dl {
+    flex-direction: column;
+    margin-bottom: 255px;
+  }
+  .news dt {
+    width: 100%;
+    border-bottom:  0;
+    padding-bottom: 0;
+  }
+  .news dd {
+    width: 100%;
+    padding-top: 0;
+  }
+}
+
+/*=============================
+contactページのスタイル
+==============================*/
+.contact {
+  margin-bottom: 245px;
+}
+.contact table {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.contact th {
+  width: calc(117/840*100%);
+  text-align: left;
+  vertical-align: top;
+  font-weight: normal;
+}
+.contact td {
+  width: calc(723/840*100%);
+}
+.contact input,
+.contact textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  border: 1px solid #C8C8C8;
+  padding: 0.8em;
+}
+.contact textarea {
+  height: 160px;
+}
+.contact .btn_area {
+  text-align: center;
+}
+.contact .contact_btn {
+  width: 200px;
+  padding: 15px 85px;
+  background-color: #24292E;
+  color: #fff;
+  border: none;
+}
+.contact .contact_btn:hover {
+  background-color: rgba(36,41,46,0.6);
+  transition: 600ms;
+}
+
+@media screen and (max-width: 750px) {
+  .contact th,
+  .contact td {
+    display: block;
+    width: 100%;
+  }
+}
